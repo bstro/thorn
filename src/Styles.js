@@ -1,9 +1,9 @@
 import selfie from "./assets/me.png";
 import styled from "styled-components";
 
-export const sans = "Avenir Next, Avenir, Futura, Helvetica Neue, Helvetica";
+const sans = "Avenir Next, Avenir, Futura, Helvetica Neue, Helvetica";
 
-export const colors = {
+const colors = {
   base: "#EFEFEF",
   yellow: "#FDCF13",
   pink: "#FF2D55",
@@ -40,28 +40,28 @@ export const sections = {
   `
 };
 
-export const title = styled.div`
+const _title = styled.div`
   font-family: ${sans};
   font-size: 72px;
   font-weight: 600;
 `;
 
 export const titles = {
-  yellow: styled(title)`
+  yellow: styled(_title)`
     color: ${colors.pink};
   `,
-  pink: styled(title)`
+  pink: styled(_title)`
     color: ${colors.yellow};
   `,
-  slate: styled(title)`
+  slate: styled(_title)`
     color: ${colors.yellow};
   `,
-  red: styled(title)`
+  red: styled(_title)`
     color: ${colors.white};
   `
 };
 
-export const paragraph = styled.p`
+export const _paragraph = styled.p`
   font-family: ${sans};
   font-size: 21px;
   line-height: 32px;
@@ -69,16 +69,16 @@ export const paragraph = styled.p`
 `;
 
 export const paragraphs = {
-  yellow: styled(paragraph)`
+  yellow: styled(_paragraph)`
     color: ${colors.black};
   `,
-  pink: styled(paragraph)`
+  pink: styled(_paragraph)`
     color: ${colors.white};
   `,
-  slate: styled(paragraph)`
+  slate: styled(_paragraph)`
     color: ${colors.white};
   `,
-  red: styled(paragraph)`
+  red: styled(_paragraph)`
     color: ${colors.white};
   `
 };

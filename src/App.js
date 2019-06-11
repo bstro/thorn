@@ -2,7 +2,13 @@ import React from "react";
 import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
 import { Grid, Cell } from "styled-css-grid";
 import "./App.css";
-import { sections, titles, paragraphs } from "./Styles";
+import {
+  Section,
+  ImageContainer,
+  sections,
+  titles,
+  paragraphs
+} from "./Styles";
 
 function App() {
   return (
@@ -93,7 +99,7 @@ function App() {
       </Cell>
 
       <Cell width={1}>
-        {/* <Section>Foo</Section> */}
+        <Section>Foo</Section>
         {/* <ImageContainer /> */}
       </Cell>
 
