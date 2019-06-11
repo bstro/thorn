@@ -1,92 +1,8 @@
 import React from "react";
 import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
-// import Logo from "./assets/dear_thorn.png";
 import { Grid, Cell } from "styled-css-grid";
-import selfie from "./assets/me.png";
-import styled from "styled-components";
 import "./App.css";
-
-const sans = "Avenir Next, Avenir, Futura, Helvetica Neue, Helvetica";
-
-const colors = {
-  base: "#EFEFEF",
-  yellow: "#FDCF13",
-  pink: "#FF2D55",
-  slate: "#26353D",
-  red: "#FF3B30",
-  white: "#EFEFEF", //"#01070F",
-  black: "#01070F"
-};
-
-const section = styled.section`
-  max-width: 66.67%;
-  // box-sizing: border-box;
-  padding: 5rem;
-  margin: 0 auto;
-`;
-
-const sections = {
-  base: styled(section)``,
-  yellow: styled(section)`
-    background-color: ${colors.yellow};
-    background-image: url('${selfie}');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom right;
-  `,
-  pink: styled(section)`
-    background-color: ${colors.pink};
-  `,
-  slate: styled(section)`
-    background-color: ${colors.slate};
-  `,
-  red: styled(section)`
-    background-color: ${colors.red};
-  `
-};
-
-const title = styled.div`
-  font-family: ${sans};
-  font-size: 72px;
-  font-weight: 600;
-`;
-
-const titles = {
-  yellow: styled(title)`
-    color: ${colors.pink};
-  `,
-  pink: styled(title)`
-    color: ${colors.yellow};
-  `,
-  slate: styled(title)`
-    color: ${colors.yellow};
-  `,
-  red: styled(title)`
-    color: ${colors.white};
-  `
-};
-
-const paragraph = styled.p`
-  font-family: ${sans};
-  font-size: 21px;
-  line-height: 32px;
-  font-weight: 400;
-`;
-
-const paragraphs = {
-  yellow: styled(paragraph)`
-    color: ${colors.black};
-  `,
-  pink: styled(paragraph)`
-    color: ${colors.white};
-  `,
-  slate: styled(paragraph)`
-    color: ${colors.white};
-  `,
-  red: styled(paragraph)`
-    color: ${colors.white};
-  `
-};
+import { sections, titles, paragraphs } from "./Styles";
 
 function App() {
   return (
@@ -176,7 +92,20 @@ function App() {
         </sections.red>
       </Cell>
 
-      <Cell width={1} />
+      <Cell width={1}>
+        {/* <Section>Foo</Section> */}
+        {/* <ImageContainer /> */}
+      </Cell>
+
+      <Cell width={1}>Cell</Cell>
+
+      <Cell width={1}>Cell</Cell>
+
+      <Cell width={1}>Cell</Cell>
+
+      <Cell width={1}>Cell</Cell>
+
+      <Cell width={1}>Cell</Cell>
     </Grid>
   );
 }
