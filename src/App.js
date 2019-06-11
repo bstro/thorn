@@ -3,7 +3,6 @@ import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
 // import Logo from "./assets/dear_thorn.png";
 import { Grid, Cell } from "styled-css-grid";
 import selfie from "./assets/me.png";
-import Section from "./Section.js";
 import styled from "styled-components";
 import "./App.css";
 
