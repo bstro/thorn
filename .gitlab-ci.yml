@@ -3,7 +3,8 @@ image: node:10.15.1 # can be upgraded, depending on your node version used
 pages:
   stage: deploy
   script:
-  - npm install
+  - npm install -g yarn
+  - yarn
   - npm run build
   - rm -rf public
   - mv build public
