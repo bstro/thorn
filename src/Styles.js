@@ -13,11 +13,13 @@ const colors = {
   black: "#01070F"
 };
 
-export const Section = styled.div`
+export const Container = styled.div`
   max-width: 66.67%;
-  // box-sizing: border-box;
-  padding: 5rem;
   margin: 0 auto;
+`;
+
+export const Section = styled.div`
+  padding: 6.667%;
 `;
 
 export const sections = {
