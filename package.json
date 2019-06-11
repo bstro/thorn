@@ -2,14 +2,15 @@
   "name": "thorn",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bstro.gitlab.io/cover-letter",
+  "homepage": "https://bstro.github.io/thorn",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "styled-css-grid": "^1.2.1",
     "react-pose": "^4.0.8",
-    "styled-components": "^4.3.1"
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.1",
+    "styled-css-grid": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
