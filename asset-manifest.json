@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cover-letter/static/css/main.0a5a390d.chunk.css",
+    "main.js": "/cover-letter/static/js/main.6054d0de.chunk.js",
+    "main.js.map": "/cover-letter/static/js/main.6054d0de.chunk.js.map",
+    "runtime~main.js": "/cover-letter/static/js/runtime~main.37c3c7fe.js",
+    "runtime~main.js.map": "/cover-letter/static/js/runtime~main.37c3c7fe.js.map",
+    "static/js/2.83f31252.chunk.js": "/cover-letter/static/js/2.83f31252.chunk.js",
+    "static/js/2.83f31252.chunk.js.map": "/cover-letter/static/js/2.83f31252.chunk.js.map",
+    "index.html": "/cover-letter/index.html",
+    "precache-manifest.880cd1ab6826d8128df67e5a31fd81f0.js": "/cover-letter/precache-manifest.880cd1ab6826d8128df67e5a31fd81f0.js",
+    "service-worker.js": "/cover-letter/service-worker.js",
+    "static/css/main.0a5a390d.chunk.css.map": "/cover-letter/static/css/main.0a5a390d.chunk.css.map",
+    "static/media/dear_thorn_alternate.5ee11674.svg": "/cover-letter/static/media/dear_thorn_alternate.5ee11674.svg",
+    "static/media/me.png": "/cover-letter/static/media/me.78bda11b.png"
+  }
+}
