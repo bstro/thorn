@@ -5,12 +5,16 @@ import {
   PADDING,
   Container,
   ImageContainer,
+  colors,
   sections,
   titles,
   paragraphs
 } from "./Styles";
 import { ReactComponent as Next } from "./assets/next.svg";
 import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
+import { ReactComponent as DesignHeader } from "./assets/header_visual_design.svg";
+import { ReactComponent as ResumeHeader } from "./assets/header_resume.svg";
+import resume from "./assets/resume.png";
 
 function App() {
   return (
@@ -104,28 +108,54 @@ function App() {
           </sections.red>
         </Cell>
 
-        <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+        <Cell width={2} center>
+          <DesignHeader
+            style={{
+              padding: "3rem 0",
+              // backgroundColor: "white",
+              width: "100%"
+            }}
+          />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+          <ImageContainer> </ImageContainer>
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+          <ImageContainer> </ImageContainer>
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+          <ImageContainer> </ImageContainer>
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+          <ImageContainer> </ImageContainer>
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer>Foo</ImageContainer>
+          <ImageContainer> </ImageContainer>
+        </Cell>
+
+        <Cell width={1}>
+          <ImageContainer> </ImageContainer>
+        </Cell>
+
+        <Cell width={2} center>
+          <ResumeHeader
+            style={{
+              padding: "3rem 0",
+              // backgroundColor: "white",
+              width: "100%"
+            }}
+          />
+        </Cell>
+
+        <Cell width={2} center>
+          <sections.white>
+            <img src={resume} style={{ width: "48%", margin: "0 auto" }} />
+          </sections.white>
         </Cell>
       </Grid>
     </Container>

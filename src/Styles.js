@@ -11,14 +11,14 @@ const colors = {
   pink: "#FF2D55",
   slate: "#26353D",
   red: "#FF3B30",
-  white: "#EFEFEF", //"#01070F",
+  offwhite: "#EFEFEF",
+  white: "#FFFFFF", //"#01070F",
   black: "#01070F"
 };
 
 export const PADDING = "9.667%";
 
 export const Container = styled.div`
-  // max-width: 66.67%;
   width: 880px;
   margin: 0 auto;
 `;
@@ -29,7 +29,7 @@ export const Section = styled.div`
 
 export const sections = {
   base: styled(Section)`
-    background-color: ${colors.white};
+    background-color: ${colors.offwhite};
   `,
   yellow: styled(Section)`
     background-color: ${colors.yellow};
@@ -55,6 +55,9 @@ export const sections = {
     background-color: ${colors.red};
     padding: ${PADDING} 7rem;
     text-align: center;
+  `,
+  white: styled(Section)`
+    background-color: ${colors.white};
   `
 };
 
@@ -105,5 +108,5 @@ export const paragraphs = {
 export const ImageContainer = styled.div`
   height: 50vh;
   width: 100%;
-  background: blue;
+  background: white;
 `;
