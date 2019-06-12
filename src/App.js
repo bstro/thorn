@@ -15,7 +15,7 @@ import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
 function App() {
   return (
     <Container>
-      <Grid columns={2}>
+      <Grid columns={2} gap="0">
         <Cell width={2}>
           <sections.base>
             <Cell center>
