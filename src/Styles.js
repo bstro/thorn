@@ -29,7 +29,7 @@ export const Section = styled.div`
 
 export const sections = {
   base: styled(Section)`
-    background-color: ${colors.offwhite};
+    background-color: ${colors.white};
   `,
   yellow: styled(Section)`
     background-color: ${colors.yellow};
@@ -108,5 +108,5 @@ export const paragraphs = {
 export const ImageContainer = styled.div`
   height: 50vh;
   width: 100%;
-  background: white;
+  background: gray;
 `;
