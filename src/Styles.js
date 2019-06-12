@@ -1,6 +1,8 @@
 import selfie from "./assets/me.png";
 import styled from "styled-components";
 
+const assets = { selfie };
+
 const sans = "Avenir Next, Avenir, Futura, Helvetica Neue, Helvetica";
 
 const colors = {
@@ -13,32 +15,46 @@ const colors = {
   black: "#01070F"
 };
 
+export const PADDING = "9.667%";
+
 export const Container = styled.div`
-  max-width: 66.67%;
+  // max-width: 66.67%;
+  width: 880px;
   margin: 0 auto;
 `;
 
 export const Section = styled.div`
-  padding: 6.667%;
+  padding: ${PADDING};
 `;
 
 export const sections = {
-  base: styled(Section)``,
+  base: styled(Section)`
+    background-color: ${colors.white};
+  `,
   yellow: styled(Section)`
     background-color: ${colors.yellow};
-    background-image: url('${selfie}');
+    background-image: url('${assets.selfie}');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 44.44%;
     background-position: bottom right;
   `,
   pink: styled(Section)`
     background-color: ${colors.pink};
+    // background-image: url('${assets.iphone}');
+    // background-position: ${PADDING} 100px;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-attachment: fixed;
   `,
   slate: styled(Section)`
     background-color: ${colors.slate};
+    padding: ${PADDING} 7rem;
+    text-align: center;
   `,
   red: styled(Section)`
     background-color: ${colors.red};
+    padding: ${PADDING} 7rem;
+    text-align: center;
   `
 };
 
@@ -60,6 +76,7 @@ export const titles = {
   `,
   red: styled(_title)`
     color: ${colors.white};
+    text-align: center;
   `
 };
 

@@ -1,19 +1,21 @@
 import React from "react";
-import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
 import { Grid, Cell } from "styled-css-grid";
 import "./App.css";
 import {
+  PADDING,
   Container,
   ImageContainer,
   sections,
   titles,
   paragraphs
 } from "./Styles";
+import { ReactComponent as Next } from "./assets/next.svg";
+import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
 
 function App() {
   return (
     <Container>
-      <Grid columns={2} gap="0">
+      <Grid columns={2}>
         <Cell width={2}>
           <sections.base>
             <Cell center>
@@ -24,7 +26,7 @@ function App() {
 
         <Cell width={2}>
           <sections.yellow>
-            <Grid columns={3} justifyContent="middle">
+            <Grid columns={3}>
               <Cell width="3">
                 <titles.yellow>About Me</titles.yellow>
               </Cell>
@@ -44,11 +46,13 @@ function App() {
 
         <Cell width={2}>
           <sections.pink>
-            <Grid columns={3} justifyContent="middle">
-              <Cell width="3">
-                <titles.pink>What's Next</titles.pink>
+            <Grid columns={3} alignContent="center" gap="120px">
+              <Cell width="1" middle>
+                <Next />
               </Cell>
-              <Cell width="2" left="1">
+              <Cell width="2">
+                <titles.pink>What's Next</titles.pink>
+
                 <paragraphs.pink>
                   For my next career challenge, I’m looking for something a
                   little different than the typical startup, something that I
@@ -64,10 +68,10 @@ function App() {
         <Cell width={2}>
           <sections.slate>
             <Grid columns={3} justifyContent="middle">
-              <Cell width="3">
+              <Cell width="3" center>
                 <titles.slate>Why Thorn?</titles.slate>
               </Cell>
-              <Cell width="2">
+              <Cell width="3">
                 <paragraphs.slate>
                   I believe in standing up for the vulnerable. I believe that if
                   even one of us is not free, then none of us are free–that we
@@ -86,7 +90,7 @@ function App() {
               <Cell width="3">
                 <titles.red>Let's talk</titles.red>
               </Cell>
-              <Cell width="2">
+              <Cell width="3">
                 <paragraphs.red>
                   I’d like to continue the conversation with you to see if
                   there’s a good fit here, because I am passionate, and ready to
