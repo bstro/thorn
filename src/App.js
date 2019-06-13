@@ -141,20 +141,16 @@ function App() {
         </Cell>
 
         <Cell width={2} center>
-          <sections.white>
-            <Grid gap={0}>
-              <Cell>
-                <ResumeHeader />
-              </Cell>
-              <Cell>
-                <img
-                  alt="Resume of Brendan Stromberger"
-                  src={resume}
-                  style={{ width: "48%", margin: "0 auto" }}
-                />
-              </Cell>
-            </Grid>
-          </sections.white>
+          <ResumeHeader style={{ margin: "6rem 0 3rem 0" }} />
+          <br />
+          <img
+            alt="Resume of Brendan Stromberger"
+            src={resume}
+            style={{
+              width: "36.67%",
+              transform: "translateX(3%)"
+            }}
+          />
         </Cell>
       </Grid>
     </Container>
