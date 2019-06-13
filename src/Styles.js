@@ -1,11 +1,11 @@
 import selfie from "./assets/me.png";
 import styled from "styled-components";
-import one from "./assets/portfolio/1.jpg";
-import two from "./assets/portfolio/2.jpg";
-import three from "./assets/portfolio/3.jpg";
-import four from "./assets/portfolio/4.jpg";
-import five from "./assets/portfolio/5.jpg";
-import six from "./assets/portfolio/6.jpg";
+import oneUrl from "./assets/portfolio/1.jpg";
+import twoUrl from "./assets/portfolio/2.jpg";
+import threeUrl from "./assets/portfolio/3.jpg";
+import fourUrl from "./assets/portfolio/4.jpg";
+import fiveUrl from "./assets/portfolio/5.jpg";
+import sixUrl from "./assets/portfolio/6.jpg";
 
 const assets = { selfie };
 
@@ -35,7 +35,7 @@ export const Section = styled.div`
 
 export const sections = {
   base: styled(Section)`
-    background-color: ${colors.white};
+    background-color: ${colors.offwhite};
   `,
   yellow: styled(Section)`
     background-color: ${colors.yellow};
@@ -111,10 +111,10 @@ export const ImageContainer = styled.div`
   width: 100%;
   background-size: cover;
   background-image: url(${props =>
-    (props.one && one) ||
-    (props.two && two) ||
-    (props.three && three) ||
-    (props.four && four) ||
-    (props.five && five) ||
-    (props.six && six)});
+    (props.one && oneUrl) ||
+    (props.two && twoUrl) ||
+    (props.three && threeUrl) ||
+    (props.four && fourUrl) ||
+    (props.five && fiveUrl) ||
+    (props.six && sixUrl)});
 `;

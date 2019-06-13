@@ -2,10 +2,8 @@ import React from "react";
 import { Grid, Cell } from "styled-css-grid";
 import "./App.css";
 import {
-  PADDING,
   Container,
   ImageContainer,
-  colors,
   sections,
   titles,
   paragraphs
@@ -111,7 +109,7 @@ function App() {
         <Cell width={2} center>
           <DesignHeader
             style={{
-              padding: "3rem 0",
+              padding: "2rem 0",
               // backgroundColor: "white",
               width: "100%"
             }}
@@ -143,18 +141,19 @@ function App() {
         </Cell>
 
         <Cell width={2} center>
-          <ResumeHeader
-            style={{
-              padding: "3rem 0 0",
-              // backgroundColor: "white",
-              width: "100%"
-            }}
-          />
-        </Cell>
-
-        <Cell width={2} center>
           <sections.white>
-            <img src={resume} style={{ width: "48%", margin: "0 auto" }} />
+            <Grid gap={0}>
+              <Cell>
+                <ResumeHeader />
+              </Cell>
+              <Cell>
+                <img
+                  alt="Resume of Brendan Stromberger"
+                  src={resume}
+                  style={{ width: "48%", margin: "0 auto" }}
+                />
+              </Cell>
+            </Grid>
           </sections.white>
         </Cell>
       </Grid>
