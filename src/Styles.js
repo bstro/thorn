@@ -107,9 +107,11 @@ export const paragraphs = {
 };
 
 export const ImageContainer = styled.div`
-  height: 50vh;
+  height: 328px;
   width: 100%;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(${props =>
     (props.one && oneUrl) ||
     (props.two && twoUrl) ||

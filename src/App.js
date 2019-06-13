@@ -46,7 +46,7 @@ function App() {
           </sections.yellow>
         </Cell>
 
-        <Cell width={2}>
+        <Cell width={2} data-aos="fade-bottom">
           <sections.pink>
             <Grid columns={3} alignContent="center" gap="120px">
               <Cell width="1" middle>
@@ -67,7 +67,7 @@ function App() {
           </sections.pink>
         </Cell>
 
-        <Cell width={2}>
+        <Cell width={2} data-aos="fade-bottom">
           <sections.slate>
             <Grid columns={3} justifyContent="middle">
               <Cell width="3" center>
@@ -86,7 +86,7 @@ function App() {
           </sections.slate>
         </Cell>
 
-        <Cell width={2}>
+        <Cell width={2} data-aos="fade-bottom">
           <sections.red>
             <Grid columns={3} justifyContent="middle">
               <Cell width="3">
@@ -117,27 +117,27 @@ function App() {
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer one />
+          <ImageContainer one data-aos="fade-right" />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer two />
+          <ImageContainer two data-aos="fade-left" />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer three />
+          <ImageContainer three data-aos="fade-right" />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer four />
+          <ImageContainer four data-aos="fade-left" />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer five />
+          <ImageContainer five data-aos="fade-right" />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer six />
+          <ImageContainer six data-aos="fade-left" />
         </Cell>
 
         <Cell width={2} center>
