@@ -1,5 +1,11 @@
 import selfie from "./assets/me.png";
 import styled from "styled-components";
+import one from "./assets/portfolio/1.jpg";
+import two from "./assets/portfolio/2.jpg";
+import three from "./assets/portfolio/3.jpg";
+import four from "./assets/portfolio/4.jpg";
+import five from "./assets/portfolio/5.jpg";
+import six from "./assets/portfolio/6.jpg";
 
 const assets = { selfie };
 
@@ -40,11 +46,6 @@ export const sections = {
   `,
   pink: styled(Section)`
     background-color: ${colors.pink};
-    // background-image: url('${assets.iphone}');
-    // background-position: ${PADDING} 100px;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-attachment: fixed;
   `,
   slate: styled(Section)`
     background-color: ${colors.slate};
@@ -108,5 +109,12 @@ export const paragraphs = {
 export const ImageContainer = styled.div`
   height: 50vh;
   width: 100%;
-  background: gray;
+  background-size: cover;
+  background-image: url(${props =>
+    (props.one && one) ||
+    (props.two && two) ||
+    (props.three && three) ||
+    (props.four && four) ||
+    (props.five && five) ||
+    (props.six && six)});
 `;

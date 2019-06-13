@@ -119,33 +119,33 @@ function App() {
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer one />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer two />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer three />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer four />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer five />
         </Cell>
 
         <Cell width={1}>
-          <ImageContainer> </ImageContainer>
+          <ImageContainer six />
         </Cell>
 
         <Cell width={2} center>
           <ResumeHeader
             style={{
-              padding: "3rem 0",
+              padding: "3rem 0 0",
               // backgroundColor: "white",
               width: "100%"
             }}
