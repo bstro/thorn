@@ -148,7 +148,8 @@ function App() {
             src={resume}
             style={{
               width: "36.67%",
-              transform: "translateX(3%)"
+              transform: "translateX(3%)",
+              marginBottom: "12rem"
             }}
           />
         </Cell>
