@@ -38,8 +38,8 @@ function App() {
                   years of experience working for startups and larger
                   organizations in the Bay Area. I have experience designing and
                   building web sites, marketing pages, email campaigns, and
-                  single-page-applications using frameworks like React and
-                  Ember. Also, I don’t wear fedoras anymore. That was a phase.
+                  single-page-applications using frameworks like React, Redux
+                  (w/ Sagas), Elm, and Ember.
                 </paragraphs.yellow>
               </Cell>
             </Grid>
@@ -75,11 +75,13 @@ function App() {
               </Cell>
               <Cell width="3">
                 <paragraphs.slate>
-                  I believe in standing up for the vulnerable. I believe that if
-                  even one of us is not free, then none of us are free–that we
-                  are all in this together. I’d really like to apply my skillset
-                  towards helping Thorn achieve its mission, to help build tools
-                  that help defend children.
+                  I need my involvements and commitments to feel meaningful.
+                  I've discovered that for me, the most meaningful projects are
+                  those that make a tangible difference in the world–something
+                  that helps people. After reading about Thorn and its mission,
+                  I knew that this was something I could invest my time in. I
+                  believe that on all levels of life, none of us is free until
+                  all of us are free, and this drives me.
                 </paragraphs.slate>
               </Cell>
             </Grid>
@@ -98,8 +100,7 @@ function App() {
                   there’s a good fit here, because I am passionate, and ready to
                   help build something that makes a difference. I invite you to
                   keep scrolling, to see a brief snapshot of my work, followed
-                  by a summary of my work experience (well, its just a fancy
-                  resume).
+                  by a quick summary of work experience.
                 </paragraphs.red>
               </Cell>
             </Grid>
