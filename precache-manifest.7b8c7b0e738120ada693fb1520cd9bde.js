@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac683f70367af2f3c9df5e53f272c9b6",
+    "revision": "8005b4622c12a7c804bc3958d0a17f8a",
     "url": "/thorn/index.html"
   },
   {
-    "revision": "fed7c391c67361b186d7",
+    "revision": "5c9dbb76b4948c3edd71",
     "url": "/thorn/static/css/main.1b242185.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thorn/static/js/2.e81866be.chunk.js"
   },
   {
-    "revision": "fed7c391c67361b186d7",
-    "url": "/thorn/static/js/main.ed2040c3.chunk.js"
+    "revision": "5c9dbb76b4948c3edd71",
+    "url": "/thorn/static/js/main.c02a7942.chunk.js"
   },
   {
     "revision": "9d52356c7772c858faae",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thorn/static/media/9.f0d7eb18.jpg"
   },
   {
-    "revision": "4fae92d1d4481ca4730de6614550856d",
-    "url": "/thorn/static/media/dear_thorn.4fae92d1.svg"
+    "revision": "d0aa37e06e26d41383a9a97c6b369e41",
+    "url": "/thorn/static/media/dear_thorn.d0aa37e0.svg"
   },
   {
     "revision": "74d5d4c454104a2b1ffcb0feeba7d52c",
