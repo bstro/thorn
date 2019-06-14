@@ -124,8 +124,8 @@ function App() {
               former half of my career, and much of that work is buried on some
               hard drives that currently in storage in San Diego. I spent a lot
               of time tracking down what I could find, and while some of this
-              isn't necessarily my <i>best</i>, it is what I could track down
-              without booking a ticket to California :)
+              isn't necessarily my <i>best</i>, it is what I could find without
+              booking a ticket to California :)
             </paragraphs.white>
             <paragraphs.white style={{ fontSize: "1rem" }}>
               The following examples showcase some web work, some mobile, a
