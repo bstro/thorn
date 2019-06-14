@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "50ab27df112d7b24bcd8ac0d1556d86d",
+    "revision": "bf23a73ec34217075736261c721311ea",
     "url": "/thorn/index.html"
   },
   {
