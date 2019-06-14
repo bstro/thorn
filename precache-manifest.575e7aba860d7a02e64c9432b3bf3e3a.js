@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ba7f92ab5ed92cb6eec99654958b1c2",
+    "revision": "69b9f8e25e40ed43397e1852f53fdecb",
     "url": "/thorn/index.html"
   },
   {
-    "revision": "8d1fe0294594a7536865",
+    "revision": "3c3de5095c58d96fe0f9",
     "url": "/thorn/static/css/main.1b242185.chunk.css"
   },
   {
-    "revision": "e094144fcd74157c4118",
-    "url": "/thorn/static/js/2.d1caffd1.chunk.js"
+    "revision": "ef203a718c20c8859b04",
+    "url": "/thorn/static/js/2.e81866be.chunk.js"
   },
   {
-    "revision": "8d1fe0294594a7536865",
-    "url": "/thorn/static/js/main.f59675d6.chunk.js"
+    "revision": "3c3de5095c58d96fe0f9",
+    "url": "/thorn/static/js/main.cb766b49.chunk.js"
   },
   {
     "revision": "9d52356c7772c858faae",
@@ -24,6 +24,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thorn/static/media/1.c1cd779d.jpg"
   },
   {
+    "revision": "1779f44ad6a820d04bf37898f9aba07c",
+    "url": "/thorn/static/media/1012.1779f44a.jpg"
+  },
+  {
+    "revision": "4c2ad0682e9b0ec1adc62aa6179288a0",
+    "url": "/thorn/static/media/11.4c2ad068.jpg"
+  },
+  {
     "revision": "3482d2fc9a75ee7e4d8fcac71c89a3c3",
     "url": "/thorn/static/media/2.3482d2fc.jpg"
   },
@@ -32,32 +40,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thorn/static/media/3.d24562c2.jpg"
   },
   {
-    "revision": "ec91f295cd458de4c5778121580a25e6",
-    "url": "/thorn/static/media/4.ec91f295.jpg"
-  },
-  {
     "revision": "29a5f697ac93f4196e5f843e3d2677fc",
-    "url": "/thorn/static/media/5.29a5f697.jpg"
+    "url": "/thorn/static/media/4.29a5f697.jpg"
   },
   {
-    "revision": "70e70c93a32b17045784b4059ff326ff",
-    "url": "/thorn/static/media/6.70e70c93.jpg"
+    "revision": "9275396748b052c07d9fd899a202f34b",
+    "url": "/thorn/static/media/5.92753967.jpg"
+  },
+  {
+    "revision": "19b46d19f6ce55bf33d5a89ce0d9fa22",
+    "url": "/thorn/static/media/6.19b46d19.jpg"
+  },
+  {
+    "revision": "2f39a2079dc93095e57e14d1151af04c",
+    "url": "/thorn/static/media/7.2f39a207.jpg"
   },
   {
     "revision": "e0ff19be6cfa7dd339e2040d5300d5b5",
-    "url": "/thorn/static/media/7.e0ff19be.jpg"
+    "url": "/thorn/static/media/8.e0ff19be.jpg"
   },
   {
-    "revision": "4edc9e8821c778dba7d460d1b356a42e",
-    "url": "/thorn/static/media/810.4edc9e88.jpg"
-  },
-  {
-    "revision": "be96ae28eea06b89b42093982b4d754b",
-    "url": "/thorn/static/media/9.be96ae28.jpg"
+    "revision": "f0d7eb18c132df0c5712b9fd6bd5c3f5",
+    "url": "/thorn/static/media/9.f0d7eb18.jpg"
   },
   {
     "revision": "a2f4e61cc7eacc71eb76ea6e9b0e33cb",
-    "url": "/thorn/static/media/dear_thorn_alternate.a2f4e61c.svg"
+    "url": "/thorn/static/media/dear_thorn.a2f4e61c.svg"
   },
   {
     "revision": "74d5d4c454104a2b1ffcb0feeba7d52c",
