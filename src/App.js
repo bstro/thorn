@@ -130,9 +130,8 @@ function App() {
             <paragraphs.white style={{ fontSize: "1rem" }}>
               The following examples showcase some web work, some mobile, a
               smidge of logo design, as well as a few email systems I both
-              designed and developed. As an aside, emails (both developing
-              coherent design patterns as well as high-fidelity implementation)
-              are one of my favorite things to work on.
+              designed and developed. As an aside, emails are one of my favorite
+              things to work on.
             </paragraphs.white>
           </sections.white>
         </Cell>
