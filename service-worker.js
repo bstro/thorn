@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/thorn/precache-manifest.d477a2626cb693f2f306fd08a23daf5f.js"
+  "/thorn/precache-manifest.c4eab957ed613caefb0c14879af35871.js"
 );
 
 self.addEventListener('message', (event) => {
