@@ -6,6 +6,9 @@ import threeUrl from "./assets/portfolio/3.jpg";
 import fourUrl from "./assets/portfolio/4.jpg";
 import fiveUrl from "./assets/portfolio/5.jpg";
 import sixUrl from "./assets/portfolio/6.jpg";
+import sevenUrl from "./assets/portfolio/7.jpg";
+import eightTenUrl from "./assets/portfolio/810.jpg";
+import nineUrl from "./assets/portfolio/9.jpg";
 
 const assets = { selfie };
 
@@ -18,6 +21,7 @@ const colors = {
   slate: "#26353D",
   red: "#FF3B30",
   offwhite: "#EFEFEF",
+  orange: "#FF9500",
   white: "#FFFFFF", //"#01070F",
   black: "#01070F"
 };
@@ -103,11 +107,14 @@ export const paragraphs = {
   `,
   red: styled(_paragraph)`
     color: ${colors.white};
+  `,
+  white: styled(_paragraph)`
+    color: ${colors.black};
   `
 };
 
 export const ImageContainer = styled.div`
-  height: 328px;
+  height: ${props => (props.eightTen ? "656px" : "328px")}
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -118,5 +125,39 @@ export const ImageContainer = styled.div`
     (props.three && threeUrl) ||
     (props.four && fourUrl) ||
     (props.five && fiveUrl) ||
-    (props.six && sixUrl)});
+    (props.six && sixUrl) ||
+    (props.seven && sevenUrl) ||
+    (props.eightTen && eightTenUrl) ||
+    (props.nine && nineUrl)});
+`;
+
+export const DownloadResume = styled.a`
+  display: block;
+  line-height: 0;
+  background-color: ${colors.pink};
+  font-size: 14px;
+  width: auto;
+  text-align: center;
+  padding: 1.5rem;
+  color: ${colors.white};
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 6rem;
+  &:hover {
+    background-color: ${colors.orange};
+  }
+  &:active {
+    opacity: 0.8;
+  }
+  &:after {
+    display: block;
+    content: "Download Resume.PDF";
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+  }
+  &:hover:after {
+    transform: scale(1.1);
+  }
 `;

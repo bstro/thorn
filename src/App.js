@@ -6,7 +6,8 @@ import {
   ImageContainer,
   sections,
   titles,
-  paragraphs
+  paragraphs,
+  DownloadResume
 } from "./Styles";
 import { ReactComponent as Next } from "./assets/next.svg";
 import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
@@ -99,62 +100,104 @@ function App() {
                   I’d like to continue the conversation with you to see if
                   there’s a good fit here, because I am passionate, and ready to
                   help build something that makes a difference. I invite you to
-                  keep scrolling, to see a brief snapshot of my work, followed
-                  by a quick summary of work experience.
+                  keep scrolling, to see a brief snapshot of some of my work,
+                  followed by a quick summary of work experience and a link to
+                  my resume.
                 </paragraphs.red>
               </Cell>
             </Grid>
           </sections.red>
         </Cell>
 
+        <Cell width={2}>
+          <sections.white data-aos="zoom-in">
+            <DesignHeader
+              style={{
+                padding: "2rem 0",
+                width: "100%"
+              }}
+            />
+            <paragraphs.white style={{ fontSize: "1rem" }}>
+              Here's a brief selection of design I've produced over the years.
+              It is intended to provide some signal, but not a full design
+              portfolio. Unfortunately, most of my heavy design work is from the
+              former half of my career, and much of that work is buried on some
+              hard drives that currently in storage in San Diego. I spent a lot
+              of time tracking down what I could find, and while some of this
+              isn't necessarily my <i>best</i>, it is what I could track down
+              without booking a ticket to California :)
+            </paragraphs.white>
+            <paragraphs.white style={{ fontSize: "1rem" }}>
+              The following examples showcase some web work, some mobile, as
+              well as a few email systems I both designed and developed. As an
+              aside, emails (both developing coherent design patterns as well as
+              high-fidelity implementation) are one of my favorite things to
+              work on.
+            </paragraphs.white>
+          </sections.white>
+        </Cell>
+
+        <Cell width={2}>
+          <Grid columns={2} gap={0} rows="1fr 1fr 1fr 1fr 1fr">
+            <Cell width={1}>
+              <ImageContainer one data-aos="fade-right" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer two data-aos="fade-left" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer three data-aos="fade-right" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer four data-aos="fade-left" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer five data-aos="fade-right" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer six data-aos="fade-left" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer seven data-aos="fade-right" />
+            </Cell>
+
+            <Cell width={1} height={2}>
+              <ImageContainer eightTen data-aos="fade-left" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer nine data-aos="fade-right" />
+            </Cell>
+          </Grid>
+        </Cell>
+
         <Cell width={2} center>
-          <DesignHeader
-            style={{
-              padding: "2rem 0",
-              // backgroundColor: "white",
-              width: "100%"
-            }}
-          />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer one data-aos="fade-right" />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer two data-aos="fade-left" />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer three data-aos="fade-right" />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer four data-aos="fade-left" />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer five data-aos="fade-right" />
-        </Cell>
-
-        <Cell width={1}>
-          <ImageContainer six data-aos="fade-left" />
-        </Cell>
-
-        <Cell width={2} center>
-          <ResumeHeader style={{ margin: "6rem 0 3rem 0" }} />
-          <br />
-          <img
-            alt="Resume of Brendan Stromberger"
-            src={resume}
-            style={{
-              width: "36.67%",
-              transform: "translateX(3%)",
-              marginBottom: "12rem"
-            }}
-          />
+          <sections.white data-aos="zoom-in">
+            <Grid gap={0} columns={3}>
+              <Cell width={3}>
+                <ResumeHeader style={{ margin: "0 0 3rem 0" }} />
+              </Cell>
+              <Cell width={3}>
+                <img
+                  alt="Resume of Brendan Stromberger"
+                  src={resume}
+                  style={{
+                    width: "50%",
+                    transform: "translateX(3%)"
+                  }}
+                />
+              </Cell>
+            </Grid>
+          </sections.white>
         </Cell>
       </Grid>
+      <DownloadResume href={`${process.env.PUBLIC_URL}/resume.pdf`} />
     </Container>
   );
 }
