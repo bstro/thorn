@@ -10,7 +10,7 @@ import {
   DownloadResume
 } from "./Styles";
 import { ReactComponent as Next } from "./assets/next.svg";
-import { ReactComponent as Logo } from "./assets/dear_thorn_alternate.svg";
+import { ReactComponent as Logo } from "./assets/dear_thorn.svg";
 import { ReactComponent as DesignHeader } from "./assets/header_visual_design.svg";
 import { ReactComponent as ResumeHeader } from "./assets/header_resume.svg";
 import resume from "./assets/resume.png";
@@ -128,11 +128,11 @@ function App() {
               without booking a ticket to California :)
             </paragraphs.white>
             <paragraphs.white style={{ fontSize: "1rem" }}>
-              The following examples showcase some web work, some mobile, as
-              well as a few email systems I both designed and developed. As an
-              aside, emails (both developing coherent design patterns as well as
-              high-fidelity implementation) are one of my favorite things to
-              work on.
+              The following examples showcase some web work, some mobile, a
+              smidge of logo design, as well as a few email systems I both
+              designed and developed. As an aside, emails (both developing
+              coherent design patterns as well as high-fidelity implementation)
+              are one of my favorite things to work on.
             </paragraphs.white>
           </sections.white>
         </Cell>
@@ -167,12 +167,20 @@ function App() {
               <ImageContainer seven data-aos="fade-right" />
             </Cell>
 
-            <Cell width={1} height={2}>
-              <ImageContainer eightTen data-aos="fade-left" />
+            <Cell width={1}>
+              <ImageContainer eight data-aos="fade-left" />
             </Cell>
 
             <Cell width={1}>
               <ImageContainer nine data-aos="fade-right" />
+            </Cell>
+
+            <Cell width={1} height={2}>
+              <ImageContainer tenTwelve data-aos="fade-left" />
+            </Cell>
+
+            <Cell width={1}>
+              <ImageContainer eleven data-aos="fade-right" />
             </Cell>
           </Grid>
         </Cell>

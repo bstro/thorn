@@ -7,8 +7,10 @@ import fourUrl from "./assets/portfolio/4.jpg";
 import fiveUrl from "./assets/portfolio/5.jpg";
 import sixUrl from "./assets/portfolio/6.jpg";
 import sevenUrl from "./assets/portfolio/7.jpg";
-import eightTenUrl from "./assets/portfolio/810.jpg";
+import eightUrl from "./assets/portfolio/8.jpg";
 import nineUrl from "./assets/portfolio/9.jpg";
+import tenTwelveUrl from "./assets/portfolio/1012.jpg";
+import elevenUrl from "./assets/portfolio/11.jpg";
 
 const assets = { selfie };
 
@@ -114,7 +116,7 @@ export const paragraphs = {
 };
 
 export const ImageContainer = styled.div`
-  height: ${props => (props.eightTen ? "656px" : "328px")}
+  height: ${props => (props.tenTwelve ? "656px" : "328px")}
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -127,8 +129,10 @@ export const ImageContainer = styled.div`
     (props.five && fiveUrl) ||
     (props.six && sixUrl) ||
     (props.seven && sevenUrl) ||
-    (props.eightTen && eightTenUrl) ||
-    (props.nine && nineUrl)});
+    (props.eight && eightUrl) ||
+    (props.nine && nineUrl) ||
+    (props.tenTwelve && tenTwelveUrl) ||
+    (props.eleven && elevenUrl)})
 `;
 
 export const DownloadResume = styled.a`
