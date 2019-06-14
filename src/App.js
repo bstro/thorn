@@ -31,7 +31,7 @@ function App() {
           <sections.yellow>
             <Grid columns={3}>
               <Cell width="3">
-                <titles.yellow>About Me</titles.yellow>
+                <titles.yellow>About me.</titles.yellow>
               </Cell>
               <Cell width="2">
                 <paragraphs.yellow>
@@ -54,7 +54,7 @@ function App() {
                 <Next />
               </Cell>
               <Cell width="2">
-                <titles.pink>What's Next</titles.pink>
+                <titles.pink>What's next?</titles.pink>
 
                 <paragraphs.pink>
                   For my next career challenge, I’m looking for something a
@@ -93,7 +93,7 @@ function App() {
           <sections.red>
             <Grid columns={3} justifyContent="middle">
               <Cell width="3">
-                <titles.red>Let's talk</titles.red>
+                <titles.red>Let's talk.</titles.red>
               </Cell>
               <Cell width="3">
                 <paragraphs.red>
