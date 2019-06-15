@@ -31,7 +31,7 @@ const colors = {
 export const PADDING = "9.667%";
 
 export const Container = styled.div`
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 `;
 
@@ -55,12 +55,10 @@ export const sections = {
   `,
   slate: styled(Section)`
     background-color: ${colors.slate};
-    padding: ${PADDING} 7rem;
     text-align: center;
   `,
   red: styled(Section)`
     background-color: ${colors.red};
-    padding: ${PADDING} 7rem;
     text-align: center;
   `,
   white: styled(Section)`
@@ -72,6 +70,7 @@ const _title = styled.div`
   font-family: ${sans};
   font-size: 72px;
   font-weight: 600;
+  line-height: 1.2;
 `;
 
 export const titles = {
@@ -93,7 +92,7 @@ export const titles = {
 export const _paragraph = styled.p`
   font-family: ${sans};
   font-size: 21px;
-  line-height: 32px;
+  line-height: 1.5;
   font-weight: 400;
 `;
 

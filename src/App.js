@@ -1,5 +1,7 @@
 import React from "react";
 import { Grid, Cell } from "styled-css-grid";
+import Responsive from "react-responsive";
+
 import "./App.css";
 import {
   Container,
@@ -15,25 +17,28 @@ import { ReactComponent as DesignHeader } from "./assets/header_visual_design.sv
 import { ReactComponent as ResumeHeader } from "./assets/header_resume.svg";
 import resume from "./assets/resume.png";
 
+const Mobile = props => <Responsive {...props} maxWidth={480} />;
+
 function App() {
   return (
     <Container>
-      <Grid columns={2} gap="0">
+      <Grid columns={2} gap="0" flow="row dense">
         <Cell width={2}>
           <sections.base>
             <Cell center>
-              <Logo />
+              <Logo style={{ width: "100%" }} />
             </Cell>
           </sections.base>
         </Cell>
 
         <Cell width={2}>
           <sections.yellow>
-            <Grid columns={3}>
-              <Cell width="3">
+            <Grid columns="repeat(auto-fit,minmax(180px, 1fr))">
+              <Cell width={3}>
                 <titles.yellow>About me.</titles.yellow>
               </Cell>
-              <Cell width="2">
+
+              <Cell width={2}>
                 <paragraphs.yellow>
                   I’m a 31-year-old designer and front-end developer with 10
                   years of experience working for startups and larger
@@ -49,11 +54,20 @@ function App() {
 
         <Cell width={2} data-aos="fade-bottom">
           <sections.pink>
-            <Grid columns={3} alignContent="center" gap="120px">
-              <Cell width="1" middle>
-                <Next />
-              </Cell>
-              <Cell width="2">
+            <Grid
+              alignContent="center"
+              columns="repeat(auto-fit,minmax(180px, 1fr))"
+              gap="20px"
+            >
+              <Responsive minWidth={768}>
+                <Cell width={1} middle>
+                  <Next
+                    style={{ marginLeft: "-15%", transform: "translateX(5%)" }}
+                  />
+                </Cell>
+              </Responsive>
+
+              <Cell width={2}>
                 <titles.pink>What's next?</titles.pink>
 
                 <paragraphs.pink>
@@ -117,27 +131,26 @@ function App() {
                 width: "100%"
               }}
             />
-            <paragraphs.white style={{ fontSize: "1rem" }}>
-              Here's a brief selection of design I've produced over the years.
-              It is intended to provide some signal, but not a full design
-              portfolio. Unfortunately, most of my heavy design work is from the
-              former half of my career, and much of that work is buried on some
-              hard drives that currently in storage in San Diego. I spent a lot
-              of time tracking down what I could find, and while some of this
-              isn't necessarily my <i>best</i>, it is what I could find without
-              booking a ticket to California :)
-            </paragraphs.white>
-            <paragraphs.white style={{ fontSize: "1rem" }}>
-              The following examples showcase some web work, some mobile, a
-              smidge of logo design, as well as a few email systems I both
-              designed and developed. As an aside, emails are one of my favorite
-              things to work on.
+            <paragraphs.white style={{ fontSize: "16px", lineHeight: "1.75" }}>
+              Here's a brief selection of web, mobile, and email system design
+              I've produced over the years. It is intended to provide some
+              signal, but not a full design portfolio. Unfortunately, most of my
+              heavy design work is from the former half of my career, and much
+              of that work is buried on some hard drives that currently in
+              storage in San Diego. I spent a lot of time tracking down what I
+              could find, and while some of this isn't necessarily my{" "}
+              <i>best</i>, it is what I could find without booking a ticket to
+              California :)
             </paragraphs.white>
           </sections.white>
         </Cell>
 
         <Cell width={2}>
-          <Grid columns={2} gap={0} rows="1fr 1fr 1fr 1fr 1fr">
+          <Grid
+            columns="repeat(auto-fit,minmax(440px, 1fr))"
+            gap={0}
+            rows="1fr 1fr 1fr 1fr 1fr"
+          >
             <Cell width={1}>
               <ImageContainer one data-aos="fade-right" />
             </Cell>
