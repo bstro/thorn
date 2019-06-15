@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf23a73ec34217075736261c721311ea",
+    "revision": "529d6e6b788e7b87a8f824251fe14108",
     "url": "/thorn/index.html"
   },
   {
-    "revision": "fbf53c34cc3b5ffcfaba",
-    "url": "/thorn/static/css/main.1b242185.chunk.css"
+    "revision": "6e508f4f8af136ffc82b",
+    "url": "/thorn/static/css/main.83cf6c86.chunk.css"
   },
   {
-    "revision": "ef203a718c20c8859b04",
-    "url": "/thorn/static/js/2.e81866be.chunk.js"
+    "revision": "b908cc28dc4bb3891a27",
+    "url": "/thorn/static/js/2.01edc6c0.chunk.js"
   },
   {
-    "revision": "fbf53c34cc3b5ffcfaba",
-    "url": "/thorn/static/js/main.2e630ccc.chunk.js"
+    "revision": "6e508f4f8af136ffc82b",
+    "url": "/thorn/static/js/main.6fca786f.chunk.js"
   },
   {
     "revision": "9d52356c7772c858faae",
