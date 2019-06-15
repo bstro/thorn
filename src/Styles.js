@@ -17,7 +17,7 @@ const colors = {
   black: "#01070F"
 };
 
-export const PADDING = "9.667%";
+export const PADDING = "4rem 3rem";
 
 export const Container = styled.div`
   max-width: 880px;

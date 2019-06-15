@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Cell } from "styled-css-grid";
 import Responsive from "react-responsive";
 
+import { useWindowDimensions } from "./hooks";
 import "./App.css";
 import {
   Container,
@@ -11,26 +12,12 @@ import {
   paragraphs,
   DownloadResume
 } from "./Styles";
-import { ReactComponent as Next } from "./assets/next.svg";
-import { ReactComponent as Logo } from "./assets/dear_thorn.svg";
-import { ReactComponent as DesignHeader } from "./assets/header_visual_design.svg";
-import { ReactComponent as ResumeHeader } from "./assets/header_resume.svg";
-import resume from "./assets/resume.png";
-import oneUrl from "./assets/portfolio/1.jpg";
-import twoUrl from "./assets/portfolio/2.jpg";
-import threeUrl from "./assets/portfolio/3.jpg";
-import fourUrl from "./assets/portfolio/4.jpg";
-import fiveUrl from "./assets/portfolio/5.jpg";
-import sixUrl from "./assets/portfolio/6.jpg";
-import sevenUrl from "./assets/portfolio/7.jpg";
-import eightUrl from "./assets/portfolio/8.jpg";
-import nineUrl from "./assets/portfolio/9.jpg";
-import tenTwelveUrl from "./assets/portfolio/1012.jpg";
-import elevenUrl from "./assets/portfolio/11.jpg";
 
-const Mobile = props => <Responsive {...props} maxWidth={480} />;
+import { assets } from "./assets";
 
 function App() {
+  const { windowWidth } = useWindowDimensions();
+
   const aboutMe = `I’m a 31-year-old designer and front-end developer with 10
   years of experience working for startups and larger
   organizations in the Bay Area. I have experience designing and
@@ -65,7 +52,7 @@ function App() {
         <Cell width={2}>
           <sections.base>
             <Cell center>
-              <Logo style={{ width: "100%" }} />
+              <assets.Logo style={{ width: "100%" }} />
             </Cell>
           </sections.base>
         </Cell>
@@ -93,7 +80,7 @@ function App() {
             >
               <Responsive minWidth={768}>
                 <Cell width={1} middle>
-                  <Next
+                  <assets.Next
                     style={{ marginLeft: "-15%", transform: "translateX(5%)" }}
                   />
                 </Cell>
@@ -111,12 +98,28 @@ function App() {
         <Cell width={2} data-aos="fade-bottom">
           <sections.slate>
             <Grid columns={3}>
-              <Cell width={3}>
-                <titles.slate>Why Thorn?</titles.slate>
-              </Cell>
-              <Cell width={3}>
-                <paragraphs.slate>{whyThorn}</paragraphs.slate>
-              </Cell>
+              {windowWidth < 640 ? (
+                <Cell width={3}>
+                  <titles.slate>Why Thorn?</titles.slate>
+                </Cell>
+              ) : (
+                <Cell width={3} center>
+                  <titles.slate>Why Thorn?</titles.slate>
+                </Cell>
+              )}
+              {windowWidth < 640 ? (
+                <Cell width={3}>
+                  <paragraphs.slate>{whyThorn}</paragraphs.slate>
+                </Cell>
+              ) : (
+                <Cell width={3} center>
+                  <paragraphs.slate
+                    style={{ padding: "0 2rem", textAlign: "justify" }}
+                  >
+                    {whyThorn}
+                  </paragraphs.slate>
+                </Cell>
+              )}
             </Grid>
           </sections.slate>
         </Cell>
@@ -136,7 +139,7 @@ function App() {
 
         <Cell width={2}>
           <sections.white data-aos="zoom-in">
-            <DesignHeader
+            <assets.DesignHeader
               style={{
                 padding: "2rem 0",
                 width: "100%"
@@ -157,53 +160,53 @@ function App() {
         </Cell>
 
         <Cell width={2}>
-          <Grid columns={"repeat(auto-fit,minmax(375px, 1fr))"} gap="0">
+          <Grid columns={"repeat(auto-fit,minmax(335px, 1fr))"} gap="0">
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={oneUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.oneUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-left" src={twoUrl} />
+              <ImageContainer data-aos="fade-left" src={assets.twoUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={threeUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.threeUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-left" src={fourUrl} />
+              <ImageContainer data-aos="fade-left" src={assets.fourUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={fiveUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.fiveUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-left" src={sixUrl} />
+              <ImageContainer data-aos="fade-left" src={assets.sixUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={sevenUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.sevenUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-left" src={eightUrl} />
+              <ImageContainer data-aos="fade-left" src={assets.eightUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={nineUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.nineUrl} />
             </Cell>
 
             <Cell width={1} height={2}>
               <ImageContainer
                 tenTwelve
                 data-aos="fade-left"
-                src={tenTwelveUrl}
+                src={assets.tenTwelveUrl}
               />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer data-aos="fade-right" src={elevenUrl} />
+              <ImageContainer data-aos="fade-right" src={assets.elevenUrl} />
             </Cell>
           </Grid>
         </Cell>
@@ -212,12 +215,12 @@ function App() {
           <sections.white data-aos="zoom-in">
             <Grid gap="0" columns={3}>
               <Cell width={3}>
-                <ResumeHeader style={{ margin: "0 0 3rem 0" }} />
+                <assets.ResumeHeader style={{ margin: "0 0 3rem 0" }} />
               </Cell>
               <Cell width={3}>
                 <img
                   alt="Resume of Brendan Stromberger"
-                  src={resume}
+                  src={assets.resume}
                   style={{
                     width: "50%",
                     transform: "translateX(3%)"
