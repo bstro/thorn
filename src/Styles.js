@@ -68,7 +68,7 @@ export const sections = {
 
 const _title = styled.div`
   font-family: ${sans};
-  font-size: 72px;
+  font-size: 3.25rem;
   font-weight: 600;
   line-height: 1.2;
 `;
