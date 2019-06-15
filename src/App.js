@@ -16,10 +16,49 @@ import { ReactComponent as Logo } from "./assets/dear_thorn.svg";
 import { ReactComponent as DesignHeader } from "./assets/header_visual_design.svg";
 import { ReactComponent as ResumeHeader } from "./assets/header_resume.svg";
 import resume from "./assets/resume.png";
+import oneUrl from "./assets/portfolio/1.jpg";
+import twoUrl from "./assets/portfolio/2.jpg";
+import threeUrl from "./assets/portfolio/3.jpg";
+import fourUrl from "./assets/portfolio/4.jpg";
+import fiveUrl from "./assets/portfolio/5.jpg";
+import sixUrl from "./assets/portfolio/6.jpg";
+import sevenUrl from "./assets/portfolio/7.jpg";
+import eightUrl from "./assets/portfolio/8.jpg";
+import nineUrl from "./assets/portfolio/9.jpg";
+import tenTwelveUrl from "./assets/portfolio/1012.jpg";
+import elevenUrl from "./assets/portfolio/11.jpg";
 
 const Mobile = props => <Responsive {...props} maxWidth={480} />;
 
 function App() {
+  const aboutMe = `I’m a 31-year-old designer and front-end developer with 10
+  years of experience working for startups and larger
+  organizations in the Bay Area. I have experience designing and
+  building web sites, marketing pages, email campaigns, and
+  single-page-applications using frameworks like React, Redux
+  (w/ Sagas), Elm, and Ember.`;
+
+  const whatsNext = `For my next career challenge, I’m looking for something a
+  little different than the typical startup, something that I
+  feel makes a meaningful impact in the world. Something more
+  than just an app, or another landing page to sell a product. I
+  can think of few projects that fit this better than Thorn.`;
+
+  const whyThorn = `I need my involvements and commitments to feel meaningful.
+  I've discovered that for me, the most meaningful projects are
+  those that make a tangible difference in the world–something
+  that helps people. After reading about Thorn and its mission,
+  I knew that this was something I could invest my time in. I
+  believe that on all levels of life, none of us is free until
+  all of us are free, and this drives me.`;
+
+  const letsTalk = `I’d like to continue the conversation with you to see if
+  there’s a good fit here, because I am passionate, and ready to
+  help build something that makes a difference. I invite you to
+  keep scrolling, to see a brief snapshot of some of my work,
+  followed by a quick summary of work experience and a link to
+  my resume.`;
+
   return (
     <Container>
       <Grid columns={2} gap="0" flow="row dense">
@@ -39,14 +78,7 @@ function App() {
               </Cell>
 
               <Cell width={2}>
-                <paragraphs.yellow>
-                  I’m a 31-year-old designer and front-end developer with 10
-                  years of experience working for startups and larger
-                  organizations in the Bay Area. I have experience designing and
-                  building web sites, marketing pages, email campaigns, and
-                  single-page-applications using frameworks like React, Redux
-                  (w/ Sagas), Elm, and Ember.
-                </paragraphs.yellow>
+                <paragraphs.yellow>{aboutMe}</paragraphs.yellow>
               </Cell>
             </Grid>
           </sections.yellow>
@@ -70,13 +102,7 @@ function App() {
               <Cell width={2}>
                 <titles.pink>What's next?</titles.pink>
 
-                <paragraphs.pink>
-                  For my next career challenge, I’m looking for something a
-                  little different than the typical startup, something that I
-                  feel makes a meaningful impact in the world. Something more
-                  than just an app, or another landing page to sell a product. I
-                  can think of few projects that fit this better than Thorn.
-                </paragraphs.pink>
+                <paragraphs.pink>{whatsNext}</paragraphs.pink>
               </Cell>
             </Grid>
           </sections.pink>
@@ -84,20 +110,12 @@ function App() {
 
         <Cell width={2} data-aos="fade-bottom">
           <sections.slate>
-            <Grid columns={3} justifyContent="middle">
-              <Cell width="3" center>
+            <Grid columns={3}>
+              <Cell width={3}>
                 <titles.slate>Why Thorn?</titles.slate>
               </Cell>
-              <Cell width="3">
-                <paragraphs.slate>
-                  I need my involvements and commitments to feel meaningful.
-                  I've discovered that for me, the most meaningful projects are
-                  those that make a tangible difference in the world–something
-                  that helps people. After reading about Thorn and its mission,
-                  I knew that this was something I could invest my time in. I
-                  believe that on all levels of life, none of us is free until
-                  all of us are free, and this drives me.
-                </paragraphs.slate>
+              <Cell width={3}>
+                <paragraphs.slate>{whyThorn}</paragraphs.slate>
               </Cell>
             </Grid>
           </sections.slate>
@@ -105,19 +123,12 @@ function App() {
 
         <Cell width={2} data-aos="fade-bottom">
           <sections.red>
-            <Grid columns={3} justifyContent="middle">
-              <Cell width="3">
+            <Grid columns={3}>
+              <Cell width={3}>
                 <titles.red>Let's talk.</titles.red>
               </Cell>
-              <Cell width="3">
-                <paragraphs.red>
-                  I’d like to continue the conversation with you to see if
-                  there’s a good fit here, because I am passionate, and ready to
-                  help build something that makes a difference. I invite you to
-                  keep scrolling, to see a brief snapshot of some of my work,
-                  followed by a quick summary of work experience and a link to
-                  my resume.
-                </paragraphs.red>
+              <Cell width={3}>
+                <paragraphs.red>{letsTalk}</paragraphs.red>
               </Cell>
             </Grid>
           </sections.red>
@@ -146,60 +157,60 @@ function App() {
         </Cell>
 
         <Cell width={2}>
-          <Grid
-            columns="repeat(auto-fit,minmax(375px, 1fr))"
-            gap={0}
-            flow="rows dense"
-          >
+          <Grid columns={"repeat(auto-fit,minmax(375px, 1fr))"} gap="0">
             <Cell width={1}>
-              <ImageContainer one data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={oneUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer two data-aos="fade-left" />
+              <ImageContainer data-aos="fade-left" src={twoUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer three data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={threeUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer four data-aos="fade-left" />
+              <ImageContainer data-aos="fade-left" src={fourUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer five data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={fiveUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer six data-aos="fade-left" />
+              <ImageContainer data-aos="fade-left" src={sixUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer seven data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={sevenUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer eight data-aos="fade-left" />
+              <ImageContainer data-aos="fade-left" src={eightUrl} />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer nine data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={nineUrl} />
             </Cell>
 
             <Cell width={1} height={2}>
-              <ImageContainer tenTwelve data-aos="fade-left" />
+              <ImageContainer
+                tenTwelve
+                data-aos="fade-left"
+                src={tenTwelveUrl}
+              />
             </Cell>
 
             <Cell width={1}>
-              <ImageContainer eleven data-aos="fade-right" />
+              <ImageContainer data-aos="fade-right" src={elevenUrl} />
             </Cell>
           </Grid>
         </Cell>
 
         <Cell width={2} center>
           <sections.white data-aos="zoom-in">
-            <Grid gap={0} columns={3}>
+            <Grid gap="0" columns={3}>
               <Cell width={3}>
                 <ResumeHeader style={{ margin: "0 0 3rem 0" }} />
               </Cell>

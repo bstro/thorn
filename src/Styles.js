@@ -1,16 +1,5 @@
 import selfie from "./assets/me.png";
 import styled from "styled-components";
-import oneUrl from "./assets/portfolio/1.jpg";
-import twoUrl from "./assets/portfolio/2.jpg";
-import threeUrl from "./assets/portfolio/3.jpg";
-import fourUrl from "./assets/portfolio/4.jpg";
-import fiveUrl from "./assets/portfolio/5.jpg";
-import sixUrl from "./assets/portfolio/6.jpg";
-import sevenUrl from "./assets/portfolio/7.jpg";
-import eightUrl from "./assets/portfolio/8.jpg";
-import nineUrl from "./assets/portfolio/9.jpg";
-import tenTwelveUrl from "./assets/portfolio/1012.jpg";
-import elevenUrl from "./assets/portfolio/11.jpg";
 
 const assets = { selfie };
 
@@ -55,11 +44,9 @@ export const sections = {
   `,
   slate: styled(Section)`
     background-color: ${colors.slate};
-    text-align: center;
   `,
   red: styled(Section)`
     background-color: ${colors.red};
-    text-align: center;
   `,
   white: styled(Section)`
     background-color: ${colors.white};
@@ -85,7 +72,6 @@ export const titles = {
   `,
   red: styled(_title)`
     color: ${colors.white};
-    text-align: center;
   `
 };
 
@@ -114,24 +100,10 @@ export const paragraphs = {
   `
 };
 
-export const ImageContainer = styled.div`
-  height: ${props => (props.tenTwelve ? "656px" : "328px")}
+export const ImageContainer = styled.img`
+  object-fit: cover;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(${props =>
-    (props.one && oneUrl) ||
-    (props.two && twoUrl) ||
-    (props.three && threeUrl) ||
-    (props.four && fourUrl) ||
-    (props.five && fiveUrl) ||
-    (props.six && sixUrl) ||
-    (props.seven && sevenUrl) ||
-    (props.eight && eightUrl) ||
-    (props.nine && nineUrl) ||
-    (props.tenTwelve && tenTwelveUrl) ||
-    (props.eleven && elevenUrl)})
+  vertical-align: bottom;
 `;
 
 export const DownloadResume = styled.a`
