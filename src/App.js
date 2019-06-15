@@ -147,9 +147,9 @@ function App() {
 
         <Cell width={2}>
           <Grid
-            columns="repeat(auto-fit,minmax(440px, 1fr))"
+            columns="repeat(auto-fit,minmax(375px, 1fr))"
             gap={0}
-            rows="1fr 1fr 1fr 1fr 1fr"
+            flow="rows dense"
           >
             <Cell width={1}>
               <ImageContainer one data-aos="fade-right" />
