@@ -34,7 +34,8 @@ export const sections = {
   `,
   yellow: styled(Section)`
     background-color: ${colors.yellow};
-    background-image: url('${assets.selfie}');
+    background-image: ${({ width }) =>
+      width && width > 720 ? `url(${assets.selfie})` : "none"};
     background-repeat: no-repeat;
     background-size: 44.44%;
     background-position: bottom right;
@@ -55,7 +56,7 @@ export const sections = {
 
 const _title = styled.div`
   font-family: ${sans};
-  font-size: 3.25rem;
+  font-size: ${({ width }) => (width && width > 768 ? "3.25rem" : "2.8rem")};
   font-weight: 600;
   line-height: 1.2;
 `;

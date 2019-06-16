@@ -57,10 +57,10 @@ function App() {
         </Cell>
 
         <Cell width={2}>
-          <sections.yellow>
+          <sections.yellow width={windowWidth}>
             <Grid columns="repeat(auto-fit,minmax(180px, 1fr))">
               <Cell width={3}>
-                <titles.yellow>About me.</titles.yellow>
+                <titles.yellow width={windowWidth}>About me.</titles.yellow>
               </Cell>
 
               <Cell width={2}>
@@ -77,16 +77,16 @@ function App() {
               columns="repeat(auto-fit,minmax(180px, 1fr))"
               gap="20px"
             >
-              {windowWidth > 768 && (
+              {windowWidth > 720 && (
                 <Cell width={1} middle>
                   <assets.Next
-                    style={{ marginLeft: "-15%", transform: "translateX(5%)" }}
+                    style={{ marginLeft: "-10%", transform: "translateX(5%)" }}
                   />
                 </Cell>
               )}
 
               <Cell width={2}>
-                <titles.pink>What's next?</titles.pink>
+                <titles.pink width={windowWidth}>What's next?</titles.pink>
 
                 <paragraphs.pink>{whatsNext}</paragraphs.pink>
               </Cell>
@@ -99,11 +99,11 @@ function App() {
             <Grid columns={3}>
               {windowWidth < 640 ? (
                 <Cell width={3}>
-                  <titles.slate>Why Thorn?</titles.slate>
+                  <titles.slate width={windowWidth}>Why Thorn?</titles.slate>
                 </Cell>
               ) : (
                 <Cell width={3} center>
-                  <titles.slate>Why Thorn?</titles.slate>
+                  <titles.slate width={windowWidth}>Why Thorn?</titles.slate>
                 </Cell>
               )}
               {windowWidth < 640 ? (
@@ -127,7 +127,7 @@ function App() {
           <sections.red>
             <Grid columns={3}>
               <Cell width={3}>
-                <titles.red>Let's talk.</titles.red>
+                <titles.red width={windowWidth}>Let's talk.</titles.red>
               </Cell>
               <Cell width={3}>
                 <paragraphs.red>{letsTalk}</paragraphs.red>
