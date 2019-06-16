@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Cell } from "styled-css-grid";
-import Responsive from "react-responsive";
 
 import { useWindowDimensions } from "./hooks";
 import "./App.css";
@@ -78,13 +77,13 @@ function App() {
               columns="repeat(auto-fit,minmax(180px, 1fr))"
               gap="20px"
             >
-              <Responsive minWidth={768}>
+              {windowWidth > 768 && (
                 <Cell width={1} middle>
                   <assets.Next
                     style={{ marginLeft: "-15%", transform: "translateX(5%)" }}
                   />
                 </Cell>
-              </Responsive>
+              )}
 
               <Cell width={2}>
                 <titles.pink>What's next?</titles.pink>
